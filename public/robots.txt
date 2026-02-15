@@ -1,0 +1,14 @@
+# Robots.txt for Evanston Diving Club
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://evanstondivinghub.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /coach-dashboard
+Disallow: /coach-login

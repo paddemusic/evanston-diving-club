@@ -1,0 +1,16 @@
+# Sync Marker - Forces Git commit sync
+# Created: 2026-02-14 19:09:44 UTC
+# Purpose: Ensure ZIP download matches live preview after comprehensive optimization
+
+This file forces the backend to recognize all file changes and create a fresh commit.
+All optimizations from the comprehensive audit should now be included in ZIP downloads:
+
+- Northwestern Purple (#4E2A84) color consistency
+- Next.js Image optimization with lazy loading
+- Mobile responsive design improvements
+- SEO enhancements (meta tags, sitemap, robots.txt)
+- Accessibility improvements (WCAG AA compliant)
+- Performance optimizations (Core Web Vitals ready)
+
+If you downloaded the ZIP before this marker was created, please wait 60 seconds
+and download again to get the latest optimized version.
