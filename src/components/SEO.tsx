@@ -17,7 +17,6 @@ export function SEOElements({
     const canonicalUrl = url || "https://www.evanstondiving.com/";
     return (
         <>
-            <title>{title}</title>
             <meta name="description" content={description} />
             <link rel="icon" href="/favicon.ico" />
             <link rel="canonical" href={canonicalUrl} />
@@ -43,10 +42,14 @@ export function SEOElements({
 }
 
 // SEO component for use in pages/_app.tsx or individual pages (uses next/head)
-export function SEO(props: SEOProps) {
+export function SEO({
+  title = "Evanston Diving Club | Illinois' Premier Year-Round Diving Program",
+  ...rest
+}: SEOProps) {
     return (
         <Head>
-            <SEOElements {...props} />
+            <title>{title}</title>
+            <SEOElements title={title} {...rest} />
         </Head>
     );
 }

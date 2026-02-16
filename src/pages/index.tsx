@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,6 +19,7 @@ import {
 export default function Home() {
   return (
     <Layout>
+      <SEO />
       {/* Hero Section - Northwestern Brand Guidelines */}
       <section className="relative min-h-screen flex items-center">
         <div className="relative container mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 text-center z-10">
