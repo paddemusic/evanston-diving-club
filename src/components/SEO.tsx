@@ -9,23 +9,26 @@ interface SEOProps {
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
 export function SEOElements({
-  title = "Evenston Diving Club",
-  description = "Experience Olympic-level coaching and world-class facilities. \\nStart your diving journey today.",
-  image = "/og-image.png",
+  title = "Evanston Diving Club | Illinois' Premier Year-Round Diving Program",
+  description = "Experience Olympic-level coaching and world-class facilities at Northwestern University. Start your diving journey today with Evanston Diving Club.",
+  image = "https://www.evanstondiving.com/og-image.png",
   url,
 }: SEOProps) {
+    const canonicalUrl = url || "https://www.evanstondiving.com/";
     return (
         <>
             <title>{title}</title>
             <meta name="description" content={description} />
             <link rel="icon" href="/favicon.ico" />
+            <link rel="canonical" href={canonicalUrl} />
 
             {/* Open Graph */}
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             {image && <meta property="og:image" content={image} />}
-            {url && <meta property="og:url" content={url} />}
+            <meta property="og:url" content={canonicalUrl} />
             <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Evanston Diving Club" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />

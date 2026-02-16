@@ -10,7 +10,8 @@ export default function About() {
     <Layout>
       <SEO
         title="About Us - Evanston Diving Club"
-        description="Learn about the Evanston Diving Club's mission, values, and what sets us apart in competitive diving training."
+        description="Learn about the Evanston Diving Club's mission, values, and what sets us apart in competitive diving training at Northwestern University."
+        url="https://www.evanstondiving.com/about"
       />
 
       {/* Hero Section */}
@@ -110,8 +111,8 @@ export default function About() {
                     World-Class Facilities
                   </h3>
                   <p className="text-gray-700">
-                    Train at Glenbrook Aquatic Center, featuring Olympic-standard
-                    diving platforms and spring boards in a climate-controlled
+                    Train at Northwestern University, featuring Olympic-standard
+                    diving platforms and springboards in a climate-controlled
                     environment.
                   </p>
                 </CardContent>

@@ -20,8 +20,9 @@ export default function Gallery() {
   return (
     <Layout>
       <SEO
-        title="Gallery - Evanston Diving Hub"
-        description="Explore our collection of diving moments, training sessions, and achievements at Evanston Diving Hub's Northwestern diving program."
+        title="Gallery - Evanston Diving Club"
+        description="Photos from Evanston Diving Club — training sessions, facilities, and diving moments at Northwestern University."
+        url="https://www.evanstondiving.com/gallery"
       />
 
       {/* Hero Section */}

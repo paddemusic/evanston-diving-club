@@ -74,8 +74,8 @@ export default function Home() {
                 href="mailto:cara.evanstondiving@gmail.com"
                 className="flex items-center justify-center gap-2"
               >
-                <UserPlus className="w-4 h-4 sm:w-5 sm:h-5" />
-                Sign Up Today
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                Email Us
               </a>
             </Button>
             <Button

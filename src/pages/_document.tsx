@@ -7,6 +7,32 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <SEOElements />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SportsOrganization",
+              name: "Evanston Diving Club",
+              description:
+                "Illinois' premier year-round diving program training champions from beginners to Olympic contenders.",
+              url: "https://www.evanstondiving.com",
+              telephone: "+1-847-840-2530",
+              email: "cara.evanstondiving@gmail.com",
+              sport: "Diving",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Evanston",
+                addressRegion: "IL",
+                postalCode: "60208",
+                addressCountry: "US",
+              },
+              sameAs: [
+                "https://www.instagram.com/evanstondivingclub/",
+              ],
+            }),
+          }}
+        />
       </Head>
       <body
         className={cn(

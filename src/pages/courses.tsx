@@ -122,7 +122,8 @@ export default function Courses() {
     <>
       <Head>
         <title>Programs - Evanston Diving Club</title>
-        <meta name="description" content="Explore our comprehensive diving programs from beginners to Olympic contenders. Year-round training with world-class coaching." />
+        <meta name="description" content="Evanston Diving Club programs for ages 6 through elite. Beginner to Olympic track, year-round training at Northwestern University." />
+        <link rel="canonical" href="https://www.evanstondiving.com/courses" />
       </Head>
       
       <Layout>

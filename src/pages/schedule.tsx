@@ -43,7 +43,8 @@ export default function Schedule() {
     <>
       <Head>
         <title>Practice Schedule - Evanston Diving Club</title>
-        <meta name="description" content="View our weekly practice schedule and coach availability at Illinois' premier diving facility." />
+        <meta name="description" content="View the Evanston Diving Club weekly practice schedule. Mon-Thu 4:45-6:45 PM, Sat 10:00 AM-12:00 PM at Northwestern University." />
+        <link rel="canonical" href="https://www.evanstondiving.com/schedule" />
       </Head>
       
       <Layout>

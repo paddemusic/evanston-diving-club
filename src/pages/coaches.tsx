@@ -70,8 +70,9 @@ export default function Coaches() {
   return (
     <Layout>
       <SEO
-        title="Our Coaches | Northwestern Diving Hub"
-        description="Meet our experienced coaching staff dedicated to developing championship divers"
+        title="Our Coaches | Evanston Diving Club"
+        description="Meet the Evanston Diving Club coaching staff, including Program Director Kris Jorgensen. Olympic-level coaching at Northwestern University."
+        url="https://www.evanstondiving.com/coaches"
       />
       
       {/* Hero Section */}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -32,16 +32,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#4E2A84] hover:text-[#4E2A84]/80 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
-              </a>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/evanstondivingclub/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#4E2A84] hover:text-[#4E2A84]/80 transition-colors"
@@ -101,7 +92,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm sm:text-base text-gray-600">
                 <Phone className="w-5 h-5 text-[#4E2A84] mt-0.5 flex-shrink-0" />
-                <span>(847) 555-DIVE</span>
+                <a href="tel:+18478402530" className="hover:text-[#4E2A84] transition-colors">(847) 840-2530</a>
               </li>
               <li className="flex items-start gap-3 text-sm sm:text-base text-gray-600">
                 <MapPin className="w-5 h-5 text-[#4E2A84] mt-0.5 flex-shrink-0" />
@@ -115,14 +106,6 @@ export function Footer() {
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-600">
             <p>© {currentYear} Evanston Diving Club. All rights reserved.</p>
-            <div className="flex gap-4 sm:gap-6">
-              <Link href="/privacy" className="hover:text-[#4E2A84] transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="hover:text-[#4E2A84] transition-colors">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

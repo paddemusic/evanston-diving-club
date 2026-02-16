@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function FAQPage() {
   const faqs = [
@@ -50,16 +51,36 @@ export default function FAQPage() {
     },
     {
       question: "What is your refund policy?",
-      answer: "We offer a satisfaction guarantee:\n\n• Full refund: Available during the first week of enrollment\n• 50% refund: Available during the first month of enrollment\n• After the first month: No refunds, but you may pause or adjust your practice schedule\n\nWe want every family to feel confident in their decision to join Evanston Diving Hub!"
+      answer: "We offer a satisfaction guarantee:\n\n• Full refund: Available during the first week of enrollment\n• 50% refund: Available during the first month of enrollment\n• After the first month: No refunds, but you may pause or adjust your practice schedule\n\nWe want every family to feel confident in their decision to join Evanston Diving Club!"
     }
   ];
 
   return (
     <>
       <SEO
-        title="FAQ - Frequently Asked Questions | Evanston Diving Hub"
-        description="Get answers to common questions about Evanston Diving Hub programs, pricing, schedules, and registration."
+        title="FAQ - Frequently Asked Questions | Evanston Diving Club"
+        description="Get answers to common questions about Evanston Diving Club programs, pricing, schedules, and registration."
+        url="https://www.evanstondiving.com/faq"
       />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      </Head>
       <Layout>
         {/* Hero Section */}
         <section className="relative bg-[#4E2A84] text-white py-12 sm:py-16 md:py-20 lg:py-32">
@@ -69,7 +90,7 @@ export default function FAQPage() {
               Frequently Asked Questions
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto px-4">
-              Everything you need to know about joining Evanston Diving Hub
+              Everything you need to know about joining Evanston Diving Club
             </p>
           </div>
         </section>
